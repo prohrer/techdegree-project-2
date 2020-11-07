@@ -55,29 +55,27 @@ ul li{
   padding: 10px 0;
 }
 
-h2 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-
 p{
   font-size: 1.25em;
   line-height: 1.5em;
 
 }
 
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
 footer{
-  position: absolute;
   padding: 40px 10px;
   border-top: #000;
 }
 
 footer h3  {
   font-weight: bold;
-  position: absolute;
-  top: 20px;
-  left: 50px;
+  float: left;
 }
 
 footer a {
@@ -130,7 +128,7 @@ a:visited{
 
   .profile-photo{
     float:right;
-    width: 45%;
+
   }
 
  .navigation li {
@@ -191,10 +189,12 @@ a:visited{
     }
 
     footer{
-      position: relative;
-      margin: 0 20px;
-      padding: 40px 40px;
+      padding 20px 10px 40px;
+      height: 40px;
+    }
 
+    footer h3{
+      line-height: 3;
     }
 
     .navigation{
@@ -220,6 +220,12 @@ a:visited{
 
 
 @media (min-width: 1024px){
+
+  p{
+    font-size: 1.75em;
+    font-weight: lighter;
+    text-align: left;
+  }
 
   footer{
     padding-bottom: 50px;
@@ -268,11 +274,18 @@ a:visited{
       margin: 10px;
     }
 
+
     .contact-info{
       display:block;
       clear: both;
       padding-top: 50px;
     }
+
+    .contact-info p{
+      text-align: center;
+      font-size: 1.5em;
+    }
+
 
     .footer{
       margin: 0 20px;
@@ -317,16 +330,7 @@ a:visited{
       display:none;
     }
 
-    .footer-nav {
-      position:absolute;
-      display:inline-block;
-      float: right;
-      font-size: 14px;
-      background-color: inherit;
-      top: 20px;
-      right: 50px;
-      background-color: #f3f3f3;
-    }
+
 
     clearfix::after{
         content: "";
